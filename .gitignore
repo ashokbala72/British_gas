@@ -1,0 +1,59 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment files
+.env
+.env.*
+
+# Streamlit-specific files
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Jupyter/IPython Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and database files
+*.log
+*.sqlite3
+*.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode and editor configs
+.vscode/
+*.code-workspace
+
+# Dependency folders
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+
+# pyenv virtualenvs
+.python-version
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Output files
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.csv
+*.xlsx
+
+# Streamlit static cache
+.streamlit/
+
+# Personal config files
+*.bak
+*.swp
+*~
