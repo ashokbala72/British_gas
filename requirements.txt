@@ -1,6 +1,11 @@
 streamlit
+<<<<<<< HEAD
 pandas
 plotly
 openai
 python-dotenv
 requests
+=======
+openai
+python-dotenv
+>>>>>>> 3820956debd95c79abbc348a1feedbd56650986f
