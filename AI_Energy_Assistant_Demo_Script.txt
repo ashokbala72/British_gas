@@ -1,0 +1,61 @@
+
+Scripted Demo: AI-Enabled Energy Assistant
+
+Opening
+-------
+Hello everyone, and welcome to this demo of our AI-Enabled Energy Assistant — a smart and interactive tool that helps energy customers monitor their usage, reduce bills, and get personalized recommendations.
+
+Step 1: Uploading Customer Data
+-------------------------------
+Let’s begin by uploading the necessary data files. The app allows us to upload five CSV files:
+- Energy usage data  
+- Billing history  
+- Payment activity  
+- Weather data  
+- Tariff plans  
+
+Once all files are uploaded successfully, the assistant processes them using Pandas.
+
+Step 2: Visualizing Energy Usage
+--------------------------------
+The first thing we see is a time-series graph showing the customer’s hourly electricity consumption over time.
+This is powered by Plotly and dynamically filtered for the selected customer.
+
+Step 3: Smart Tips to Reduce My Bill
+------------------------------------
+Now we click on ‘Show My Energy-Saving Suggestions’. Behind the scenes, the assistant prepares a prompt using recent usage, billing slab, weather, and payment behavior — and sends it to OpenAI.
+Here are 3 personalized, actionable tips the AI suggests based on that data.
+
+Step 4: Weather Impact on Usage
+-------------------------------
+This section shows how daily temperature correlates with energy usage. We combine weather data and energy data into a dual-axis line graph.
+Below that, we get AI-generated insights describing how weather changes impact energy consumption.
+
+Step 5: Forecast Next 15 Days Usage
+-----------------------------------
+Let’s click on ‘Forecast My Weather-Aware Usage’. We send historical consumption and a 15-day forecast (via WeatherAPI) to OpenAI, and it predicts daily energy usage.
+We then visualize the forecasted temperature and expected energy consumption together.
+
+Step 6: Ask Anything
+--------------------
+Now I’ll type a custom question: ‘Why was my usage high last week?’
+The assistant gathers a summary of usage, billing, payments, and recent weather — sends it to OpenAI — and gives a context-aware response.
+
+Step 7: Billing & Payments
+--------------------------
+The app also shows detailed billing and payment history below. This helps the customer verify past charges and track missed payments.
+
+Step 8: Personalized Plan Recommendations
+-----------------------------------------
+Finally, we click ‘Show Personalized Bill Relief Offers’. The assistant compares the customer’s bill trend with available tariff options and missed payments — and OpenAI suggests 2–3 tariff or cost-saving plans.
+
+Closing Summary
+---------------
+As you’ve seen, this assistant blends customer data, AI reasoning, weather forecasting, and visual storytelling to make energy insights simple and actionable. It’s built using:
+- Streamlit for the UI  
+- Pandas for data wrangling  
+- Plotly for visualizations  
+- OpenAI for all GenAI-powered guidance  
+- WeatherAPI for forecast integration  
+
+Thank you for watching this demo of the AI Energy Assistant.
